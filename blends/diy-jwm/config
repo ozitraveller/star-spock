@@ -177,7 +177,7 @@ extra_packages+=(
 	ufw 
 	gparted  
 	htop
-	gksu 
+	# gksu 
 	gdebi 
 	hardinfo 
 	synaptic
@@ -199,7 +199,8 @@ extra_packages+=(
 	connman
 	connman-ui
 	hsetroot
-	lxterminal
+	# lxterminal
+	sakura
 	arandr
 	lxappearance
 	mousepad
