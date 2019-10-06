@@ -9,20 +9,20 @@ source $BLENDPATH/config
 
 blend_preinst() {
 	fn blend_preinst
-	req=(strapdir blend release)
+	req=(strapdir blendname release)
 	ckreq || return 1
 
-	notice "executing $blend preinst"
+	notice "executing $blendname preinst"
 	
 }
 
 
 blend_postinst() {
 	fn blend_postinst
-	req=(strapdir blend)
+	req=(strapdir blendname)
 	ckreq || return 1
 
-	notice "executing $blend postinst"
+	notice "executing $blendname postinst $BLENDPATH"
 	
 	pushd "$strapdir"
 		mkdir ./hooks
@@ -106,10 +106,10 @@ EOF
 
 blend_prebuild() {
 	fn blend_prebuild
-	req=(strapdir)
+	req=(strapdir blendname)
 	ckreq || return 1
 
-notice "executing $blend prebuild"
+notice "executing $blendname prebuild"
 
 	blend_exec_hooks 			|| zerr
 	blend_cleanup 				|| zerr

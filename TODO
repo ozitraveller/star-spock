@@ -1,0 +1,25 @@
+Star-Welcome
+
+1. option to remove automount and add pmount + menu options.
+
+
+
+
+
+
+Option to restart Tint2
+Add tint2conf
+
+https://crunchbang.org/forums/viewtopic.php?id=7449
+
+
+
+
+#!/bin/bash
+(killall -e tint2) &
+(killall -e perl /usr/share/volwheel/volwheel) &
+(sleep 1s && tint2) & 
+(sleep 2s && /usr/bin/volwheel) & 
+(sleep 5s && exit )
+
+MainMenu (Super-Key + Space) --> Settings --> tint2 --> Restart tint2

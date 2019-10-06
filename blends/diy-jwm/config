@@ -156,9 +156,10 @@ extra_packages+=(
 	iw
 	wireless-tools
 	wpasupplicant
+	# setnet
+	# ceni
 	lsb-release
 	wmctrl
-	setnet
 	iputils-ping
 	bind9-host
 	traceroute
@@ -199,8 +200,8 @@ extra_packages+=(
 	connman
 	connman-ui
 	hsetroot
-	# lxterminal
-	sakura
+	lxterminal
+	# sakura
 	arandr
 	lxappearance
 	mousepad
@@ -402,5 +403,6 @@ openssh-sftp-server
 	youtube-dl
 	zsh
 	zsh-common
+	systemd
 
 )

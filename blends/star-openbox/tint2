@@ -1,0 +1,17 @@
+## Setting up tint2 in fluxbox ##
+
+# http://fluxbox.org/help/man-fluxbox.php
+# https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
+# https://wiki.archlinux.org/index.php/Tint2#Running_tint2
+
+1. edit and enable tint2 in : ~/.fluxbox/startup
+
+2. edit : ~/.fluxbox/init
+   Change : session.screen0.toolbar.tools:	workspacename, iconbar, systemtray, clock
+   To     : session.screen0.toolbar.tools:	workspacename, iconbar, clock   
+
+   Change : session.screen0.toolbar.layer:	Dock
+   To     : session.screen0.toolbar.layer:	Desktop
+   
+   Change : session.screen0.toolbar.visible:	true
+   To     : session.screen0.toolbar.visible:	false 

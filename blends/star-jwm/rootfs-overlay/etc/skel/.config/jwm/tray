@@ -6,7 +6,7 @@
    <Tray  x="0" y="+1" height="30" autohide="off" valign="top">
 
       <TrayButton icon="/usr/share/jwm/star-white.svg">root:1</TrayButton>
-      <TrayButton icon="/usr/share/icons/Grey-Maia/places/22/user-desktop.svg">showdesktop</TrayButton>
+      <TrayButton icon="/usr/share/icons/Grey-Maia/places/22/user-desktop.png">showdesktop</TrayButton>
       <TrayButton icon="/usr/share/icons/Grey-Maia/apps/22/utilities-terminal.png">exec:x-terminal-emulator</TrayButton>
       <TrayButton icon="/usr/share/icons/Grey-Maia/apps/22/system-file-manager.svg">exec:x-file-manager</TrayButton>
       <TrayButton icon="/usr/share/icons/Grey-Maia/apps/22/mpv.svg">exec:x-media-player</TrayButton>

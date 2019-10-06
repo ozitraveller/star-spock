@@ -76,9 +76,10 @@ rm -f /etc/apt/sources.list.d/packages.list
 
 zerosize() { 
   find $* | while read file; do 
-    echo -n "." 
-    rm -f $file 
-    touch $file 
+	: > $file
+    #~ echo -n "." 
+    #~ rm -f $file 
+    #~ touch $file 
   done 
 } 
 

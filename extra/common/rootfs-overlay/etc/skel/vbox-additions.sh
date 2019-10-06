@@ -40,6 +40,7 @@ cd ../..
 umount /mnt/dvd
 
 
-
+# alias mshr='sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) share ~/host'
+source ~/.bashrc
 
 exit 0

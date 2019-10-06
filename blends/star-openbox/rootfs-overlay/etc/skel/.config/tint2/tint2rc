@@ -60,6 +60,7 @@ border_color = #888888 20
 panel_monitor = all
 panel_position = top center horizontal
 panel_items = TSC
+# Launchers Taskbar Systemtray Battery Clock
 panel_size = 100% 30
 panel_margin = 0 -1
 panel_padding = 0 0
@@ -121,10 +122,10 @@ launcher_icon_size = 24
 # if you have an XSETTINGS manager running (like xfsettingsd), tint2 will follow your current theme.
 launcher_icon_theme = Grey-Maia
 # Each launcher_item_app must be a full path to a .desktop file
-launcher_item_app = /usr/share/applications/lxterminal.desktop
-launcher_item_app = /usr/share/applications/spacefm.desktop
-launcher_item_app = /usr/share/applications/mpv.desktop
-launcher_item_app = /usr/share/applications/epiphany.desktop
+# launcher_item_app = /usr/local/bin/tint2launchers/terminal.desktop
+# launcher_item_app = /usr/local/bin/tint2launchers/file-manager.desktop
+# launcher_item_app = /usr/local/bin/tint2launchers/media-player.desktop
+# launcher_item_app = /usr/local/bin/tint2launchers/web-browser.desktop
 
 # System Tray
 systray = 1
