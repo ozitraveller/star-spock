@@ -76,6 +76,26 @@ build_iso_dist() {
 	iso_genisoimage_build       || { zerr; wrapup }
 }
 
+build_iso_dist_live() {
+	fn build_iso_dist
+	req=(workdir strapdir os arch)
+	ckreq || return 1
+
+	notice "building complete iso image"
+
+	bootstrap_complete_base || { zerr; wrapup }
+	blend_preinst           || { zerr; wrapup }
+	iso_prepare_strap       || { zerr; wrapup }
+	build_kernel_${arch}    || { zerr; wrapup }
+	iso_setup_isolinux_live || { zerr; wrapup }
+	iso_write_isolinux_cfg_live  || { zerr; wrapup }
+	#[[ $INSTALLER = 1 ]] && iso_setup_installer || zerr
+	blend_postinst          || { zerr; wrapup }
+	fill_apt_cache          || { zerr; wrapup }
+	iso_squash_strap        || { zerr; wrapup }
+	iso_xorriso_build       || { zerr; wrapup }
+}
+
 build_vagrant_dist() {
 	fn build_vagrant_dist
 	req=(workdir strapdir os arch imageformat)

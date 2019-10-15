@@ -7,7 +7,9 @@ URxvt*iconFile: /usr/local/bin/images/utilities-terminal.png
 ! URxvt*background: Black
 ! URxvt*foreground: White
 URxvt*geometry: 80x30
-URxvt*scrollBar: false
+URxvt*scrollBar: true
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
 
 "URxvt.font: 9x12"
 
