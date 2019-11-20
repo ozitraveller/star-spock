@@ -86,7 +86,9 @@ base_packages+=(
 	fakeroot
 	gawk
 	hwinfo
-	loadlin
+        apparmor
+	win32-loader
+	#loadlin
 	
 )
 
@@ -303,6 +305,7 @@ purge_packages_final+=(
 	laptop-detect
 	less
 	loadlin
+	win32-loader
 	lxde-settings-daemon
 	lynx
 	lynx-common

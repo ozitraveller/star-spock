@@ -89,3 +89,4 @@ echo ""
 rm -f /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop*
 rm -f /etc/xdg/connman-tray.desktop
 
+rm -f /usr/share/applications/exo-mail-reader.desktop

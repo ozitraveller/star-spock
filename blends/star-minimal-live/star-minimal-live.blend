@@ -272,8 +272,7 @@ put_create_initrd(){
 ## func
 put_finalize(){
 
-#	cat <<EOF | sudo tee ${strapdir}/finalize >/dev/null
-	cat <<EOF | sudo tee ${strapdir}/finalize >/dev/null	
+	cat <<EOF | sudo tee ${strapdir}/finalize >/dev/null
 #!/bin/sh
 
 ## permissions
@@ -374,7 +373,7 @@ ln -s \${MICRO_INITRD} /boot/initrd.img-\${KERN_ORIG}
 
 EOF
 
-cp ${strapdir}/finalize ${strapdir}/finalize.bak
+# cp ${strapdir}/finalize ${strapdir}/finalize.bak
 	
 }
 

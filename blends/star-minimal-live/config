@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 ## configuration file for devuan-minimal-live blend
 
-# vars+=(username userpass default_shell) # mkefi grubversion hookscripts)
+vars+=(username userpass default_shell) # mkefi grubversion hookscripts)
 # arrs+=(custom_deb_packages)
 
 blend_name="star-minimal-live_"

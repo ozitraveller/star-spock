@@ -170,9 +170,9 @@ notice "Running blend_exec_hooks"
 
 notice "Copying system hooks"
 	# /usr/share/live/build/hooks/normal/
-	ls -al $R/extra/hooks/normal
+	# ls -al $R/extra/hooks/normal
 	cp -rf $R/extra/hooks/normal/* ${strapdir}/hooks
-	ls -al ${strapdir}/hooks
+	# ls -al ${strapdir}/hooks
 
 	cat <<EOF | sudo tee ${strapdir}/exec_hooks >/dev/null
 #!/bin/sh
